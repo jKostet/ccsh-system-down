@@ -1,0 +1,133 @@
+/*
+I wonder if it would be possible to define these in e.g. colours.css,
+and then import that to common.css, jobs.css and challenge.css, instead
+of declating them in every file. Couldn't find a way yet. - jkostet
+*/
+element {
+  --robot_green: #30ff00;
+  --robot_black: #111111;
+}
+
+@font-face {
+  font-family: 'DIN';
+  src: url("assets/D-DIN.ttf");
+}
+
+@font-face {
+    font-family: 'DINCondensed-Bold';
+    src: url("assets/DINCondensed-Bold.ttf");
+}
+
+span, p, h1, h2, h3, div {
+  color: #ffffff;
+  font-family: 'DIN';
+}
+
+.netzwerk-picture {
+  background: url("../assets/netzwerk.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+}
+
+.top-grid-container h2 {
+  font-family: DINCondensed-Bold;
+  opacity: 0.87;
+}
+.top-grid-container span {
+font-size: 18px;
+}.top-grid-container h3 {
+  font-family: DIN;
+  opacity: 0.87;
+}
+
+body {
+  background-color: #111111;
+}
+
+/* Glitch effects thanks to https://github.com/hmongouachon/mgGlitch */
+/* glitch elem must have absolute position */
+.glitch-img {
+   position: absolute;
+   width : 100%;
+   height : 100%;
+   top: 0 ;
+   left : 0;
+   background-position:center;
+   -moz-background-size:cover;
+   -o-background-size:cover;
+   -webkit-background-size:cover;
+   background-size:cover;
+   opacity : 1
+}
+
+@media only screen and (max-device-width: 700px) {
+  .ParallaxContainer {
+    height: 100vh;
+    scale: 1.5;
+  }
+
+  .top-grid-container {
+    margin-top: 50%;
+  }
+}
+
+html, body {
+  font-size: 18px;
+  line-height: 28px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+}
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ContentContainer {
+  position: relative;
+  display: block;
+/*  background-color: blue;
+  */
+  z-index: 1;
+}
+
+.Content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+p {
+  margin: 75px 0;
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background-image: url("assets/netzwerk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+* {
+  transform: rotate(0.1deg);
+}
