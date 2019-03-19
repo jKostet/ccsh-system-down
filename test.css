@@ -130,5 +130,10 @@ p {
 }
 
 * {
-  transform: rotate(0.1deg);
+  transform: rotate(0.2deg);
+}
+
+.apu {
+  opacity: 0.25;
+  scale: 2;
 }
