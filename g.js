@@ -29,7 +29,7 @@ $( function() {
 // Timer pen by Sergei Varzin at https://codepen.io/varzin/pen/rFfhH
 function updateTimer() {
 	// SET TARGET DATE
-  future  = Date.parse("June 11, 2020 11:30:00");
+  future  = Date.parse("May 1, 2019 12:00:00");
   now     = new Date();
   diff    = future - now;
 
