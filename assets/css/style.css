@@ -1,3 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 /*
 I wonder if it would be possible to define these in e.g. colours.css,
 and then import that to common.css, jobs.css and challenge.css, instead
