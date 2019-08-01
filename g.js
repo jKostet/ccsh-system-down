@@ -46,9 +46,9 @@ function updateTimer() {
   apu = document.getElementById("timer");
 	apu
     .innerHTML =
-      '<div>' + d + '<span> days</span></div>' +
-      '<div>' + h + '<span> hours</span></div>' +
-      '<div>' + m + '<span> minutes</span></div>' +
-      '<div>' + s + '<span> seconds</span></div>' ;
+      '<div>' + d + '<span> days  </span>' +
+       + h + '<span> hours </span></div>' +
+       '<div>'+ m + '<span> minutes </span>' +
+       + s + '<span> seconds </span></div>' ;
 }
 setInterval('updateTimer()', 1000 );
