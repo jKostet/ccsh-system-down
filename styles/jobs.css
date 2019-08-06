@@ -1,0 +1,351 @@
+/*
+I wonder if it would be possible to define these in e.g. colours.css,
+and then import that to common.css, jobs.css and challenge.css, instead
+of declating them in every file. Couldn't find a way yet. - jkostet
+*/
+element {
+  --robot_green: #30ff00;
+  --robot_black: #111111;
+}
+
+@font-face {
+  font-family: 'DIN';
+  src: url("../assets/D-DIN.ttf");
+}
+
+@font-face {
+    font-family: "IBMFont";
+    src: url("../assets/PxPlus_IBM_VGA8-2x.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'DINCondensed-Bold';
+    src: url("../assets/DINCondensed-Bold.ttf");
+}
+
+span, p, h1, h2, h3, div {
+  color: #ffffff;
+  font-family: 'DIN';
+}
+
+a {
+  font-family: DINCondensed-Bold;
+}
+
+.netzwerk-picture {
+  background: url("../assets/netzwerk.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -100;
+}
+canvas {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+  transition: .5s ease;
+  opacity: 0.5;
+  /* transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); */
+}
+
+.challenge-card {
+  width: 207px;
+height: 207px;
+  padding: 0px 18px 18px 20px;
+  box-shadow: inset 1px 1px 18px 0 rgba(255, 255, 255, 0.25);
+  margin: 33px;
+  float: left;
+}
+a.under_line:hover{
+  text-decoration: underline;
+}
+div.answerbox {
+  margin:20px;
+}
+.btn-submit{
+  z-index: 100;
+}
+/* .challenge-link {
+  width: 164px;
+  min-height: 35px;
+  max-height: 65px;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.challenge-link a {
+  width: 115px;
+  height: 18px;
+  font-family: DIN;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: condensed;
+  line-height: normal;
+  letter-spacing: normal;
+
+  border: solid 1px #30ff00;
+
+  padding: 5px;
+
+} */
+
+.top-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.top-grid-container h2 {
+  font-family: DINCondensed-Bold;
+  opacity: 0.87;
+}
+.top-grid-container span {
+font-size: 18px;
+}.top-grid-container h3 {
+  font-family: DIN;
+  opacity: 0.87;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "navbar top"
+    "navbar jobs"
+    ". disclaimer";
+  grid-gap: 1em;
+
+  background-color: #111111;
+
+  opacity: 0.98;
+}
+
+.grid-container p {
+  margin: 0px;
+}
+
+.jobs {
+  grid-area: jobs;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.jobs div {
+  margin: 10px;
+}
+
+div.challenge-contents {
+    padding: 26px 19px;
+}
+
+/* div.challenge-link p {
+    color: #FFFFFF;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin: 0px;
+} */
+
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+
+
+a.gold-button {
+  color: gold !important;
+  border: solid 1px gold !important;
+
+  font-family: DINCondensed-Bold;
+  background: ##111111;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: .05em;
+  font-stretch: condensed;
+  padding: 11px 30px 7px 24px;
+  position: relative;
+  text-transform: uppercase;
+}
+a.gold-button:hover {
+  -webkit-animation: glow 1s ease-in infinite;
+          animation: glow 1s ease-in infinite;
+  border: solid 1px gold !important;
+  background: #111111;
+}
+
+a.gold-button::before {
+  border-radius: inherit;
+  content: '';
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  opacity: .75;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+a.gold-button:hover::before {
+  background: gold;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  opacity: 0.3;
+  border: solid 1px gold;
+}
+
+a.animated-button {
+  font-family: DINCondensed-Bold;
+  background: ##111111;
+  border: solid 1px #22d617;
+  text-decoration: none;
+  color: #22d617;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: .05em;
+  font-stretch: condensed;
+  padding: 11px 30px 7px 24px;
+  position: relative;
+  text-transform: uppercase;
+}
+a.animated-button:hover {
+  -webkit-animation: glow 1s ease-in infinite;
+          animation: glow 1s ease-in infinite;
+  border: solid 1px #22d617;
+  background: #111111;
+}
+a.animated-button::before {
+  border-radius: inherit;
+  content: '';
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  opacity: .75;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+a.animated-button:hover::before {
+  background: #22d617;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  opacity: 0.3;
+  border: solid 1px #22d617;
+}
+
+#navbar {
+  overflow: hidden;
+
+  # grid-area: navbar;
+  grid-column: navbar;
+
+  list-style: none;
+}
+
+#navbar ul {
+    list-style: none;
+    font-size: 31px;
+}
+
+#navbar ul li {
+    margin-bottom: 20px;
+}
+
+#navbar ul li a {
+    color: #8a8989;
+    letter-spacing: .05em;
+}
+#navbar a:hover {
+text-decoration: underline;
+color: #22d617;
+}
+
+#navbar ul li a.active {
+    color: #22d617;
+    text-decoration: underline;
+}
+
+div.loginbox p {
+    font-family: "IBMFont", sans-serif;
+    color: #30ff00;
+}
+
+div.loginbox input {
+    width: 150px;
+    border: #30ff00 2px solid;
+    background-color: #111111;
+    color: #666666;
+}
+
+div#end-disclaimer {
+    grid-area: disclaimer;
+    margin-top: 20vh;
+    padding-left: 26px;
+}
+div#end-disclaimer h2{
+  opacity: 0.87;
+}
+div#about p {
+    width: 75%;
+    margin-bottom: 40px;
+}
+
+div.loggedinuserinfo {
+    text-align: center;
+}
+
+#about > p {
+  color: white;
+  font-family: DIN;
+}
+
+.jobsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  # margin: 10% 10% 10% 10%;
+
+  background-color: rgba(0,0,0,0.9);
+  border: 1px dotted #30ff00;
+}
+
+.jobsContainer > .challenge-card {
+  width: 207px;
+}
+
+.job {
+  display: grid;
+  grid-template-areas:
+    "job-area-top" "job-area-top" "job-area-top"
+    "job-logo" "job-desc" "job-details";
+
+  background-color: rgba(0,0,0,0.9);
+  border: 1px dotted #30ff00;
+
+  text-align: center;
+}
+.job > p {
+  margin: 10% 10% 10% 10%;
+}
+
+.questDetails > ul, .questDetails > ul > li {
+  border: 1px dotted #30ff00;
+}
+.questDetails {
+  grid-area: job-details;
+}
+.questTitle {
+  grid-area: job-area-top;
+}
+.questDescription {
+  grid-area: job-desc;
+}
+.questLogo {
+  grid-area: job-logo;
+}

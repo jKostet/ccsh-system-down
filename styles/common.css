@@ -1,0 +1,27 @@
+/*
+I wonder if it would be possible to define these in e.g. colours.css,
+and then import that to common.css, jobs.css and challenge.css, instead
+of declating them in every file. Couldn't find a way yet. - jkostet
+*/
+element {
+  --robot_green: #30ff00;
+  --robot_black: #111111;
+}
+
+a {
+  color: #30ff00;
+  text-decoration: none;
+}
+
+body {
+  background-color: #111111;
+  margin: 0px;
+}
+
+p#backend-error {
+    margin: 0px;
+}
+
+.hidden {
+  display: none;
+}
