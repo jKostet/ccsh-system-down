@@ -1,38 +1,197 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" xml:lang="en">
     <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="test.css">
+
+
+      <!--link rel="stylesheet" type="text/css" href="styles/reset.css"-->
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <link rel="stylesheet" type="text/css" href="styles/jobs.css">
+      <link rel="stylesheet" type="text/css" href="styles/common.css">
+      <link rel="stylesheet" type="text/css" href="styles/g.css">
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/gh/hmongouachon/mgGlitch/src/mgGlitch.min.js"></script>
+
     </head>
-    <body>
+    <body >
 
       <div class="MainContainer">
+
         <div class="ParallaxContainer">
-          <div class="top-grid-container glitch-img" style="position: absolute; top: 25%; width: 100%; text-align: center;">
-            <h2 style="grid-column-start: 2; margin-top: 2em; scale: 1.5">
-              <img src="assets/hel-logo.png" style="width: 46px; height: 71px; float: center; transform: rotate(5deg)" />
+          <div class="top-grid-container glitch-img" style="position: absolute; top: 0%; width: 100%; text-align: center;">
+            <div style="grid-column-start: 1; margin-top: 19px; margin-left: 30px;">
+              <img src="assets/hel-logo.png" style="width: 46px; height: 71px; float: left;" />
+              <h3 style="float: left; text-align: left; margin-left: 10px; margin-top: 18px;">
+                Building the
+                <br>
+                future together
+              </h3>
+            </div>
+            <h2 style="grid-column-start: 2; margin-top: 2em">
+              "Helsinki is the city where the future happens.
               <br>
-              SYSTEM REBOOTING
+              Are you ready to disrupt the world with us?"
               <br>
-              <span id="timer"></span>
-              <br>
-              <h4>CCSH Emergency Notice - August 2043</h4>
-              <span>
-                  The Corporate City State of Helsinki apologizes for the interruption in citizen's schedules due to the ongoing emergency.
-                  <br>
-                  Despite the lack of basic necessities in many areas of the city, we remind citizens to remain calm, as plans for increasing the gruel supply are already underway. Do not panic.
-<br><br>
-Human Intelligence Tasks are currently unavailable, but will be released later as schedule permits.
-                  <br>
-                  Further information on the barrier enveloping the city and other such minor inconveniences will be made available later by our trusted partners at Dvergar, along with some job offers of course. <a href="brokenLink">See here for more information</a>.
-<br><br>
-U9R1SE is to stop ddos:ing our servers immediately!</span>
+              - <span>Ilmari Hopeainen, Mayor and CEO of Helsinki</span>
             </h2>
+            <h3 style="grid-column-start: 3; text-align: right; padding-right: 50px">
+              Brain interface mode unavailable on your device.
+            </h3>
+          </div>
+        </div>
+
+        <div class="ContentContainer" style="margin-top: -300px; margin-left: -5%;">
+          <div id="navbar-display">
+            <div id="navbar" class="glitch-img">
+              <ul>
+                <li>
+                  <a id="jobs-navbar-link" onclick="displayJobs()">CHALLENGES</a>
+                </li>
+                <li>
+                  <a id="about-navbar-link" onclick="displayAbout()">ABOUT</a>
+                </li>
+                <li>
+                  <a id="login" href="#" style="text-decoration: line-through;">LOGIN</a>
+                </li>
+              </ul>
+            </div>
+            <div id="display">
+              <div id="about" class="hidden">
+                <h1>ABOUT</h1>
+                <p>Welcome to the job board of the Corporate City State of Helsinki (CCSH)! We work with various partners to provide you with tasks that can be done from any location within the Helsinki metropolitan area provided with safe local network access point. Available jobs are displayed here together with information about the tasks, employers and immediate credit reward given for completing the task.</p>
+
+                <p>Outstanding performance in tasks may be rewarded with a possibility to apply for citizenship. Possible applicants will be informed immediately after a sufficient quantity of tasks has been completed. Unfortunately, we cannot inform you about the exact amount of tasks that must be performed to yield citizenship due to the differing nature and challenge level of the tasks. In addition, our partners at Dvergar Co. have agreed to lend surplus robotics equipment at a substantial discount for all registered users of the job board. This equipment may be retrieved from Dvergar's automated factories starting from the 19th of October, 2042.</p>
+
+                <p>By applying for a task you agree to a full non-disclosure agreement to keep Employer Confidential Information strictly confidential. You may not disclose the Employer Confidential Information to any person without the Employer’s prior written consent, and then only under conditions of confidentiality. Any breach of this non-disclosure agreement will lead to imminent suspension of your SIN (Secure Identity Number) account for anywhere from 1 month to 12 months.</p>
+
+                <p>Credits are paid directly to your cryptoaccount through our third-party verified servers by receiving cryptokey for your credit deposit. Full list of cross verification is available through our contact services. Your cryptoaccount credentials are received automatically by logging in to our site using automatic SIN account verification. SIN account verification has been provided to the CCSH by Huawei-Nokia router services. If you have no SIN account, you can create one automatically by submitting your DNA sample and retinal scan at the nearest SIN scanner station. Please take note that only inter-City transfers are allowed from this job board. Forwarding payments will lead to severe consequences due to City penal code no: 10923 and Finnish law (using the pre-revision version of 2036 where applicable). All rights are reserved.</p>
+              </div>
+
+              <div id="jobs" class="jobsContainer">
+                <div id="challenge-1" class="challenge-card">
+                <div class="challenge-contents">
+                <h4>
+                Posters posters
+                </h4>
+                <div>
+                ??? credits
+                <br>
+                Applicants: UNAVAIL
+                </div>
+                <span>
+                sleuth <br/><br/><br/>
+                </span>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                <a href="#" class="animated-button" onclick="displayJob(1)" >CHECK OUT</a>
+                </div>
+                </div>
+                </div>
+                <div id="challenge-2" class="challenge-card">
+                <div class="challenge-contents">
+                <h4>
+                CCSH Emergency Notice #1
+                </h4>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                <a href="#" class="gold-button" onclick="displayJob(999)" >READ MORE</a>
+                </div>
+                </div>
+                </div>
+                <div id="challenge-3" class="challenge-card">
+                <div class="challenge-contents">
+                <h4>
+                CCSH Emergency Notice #2
+                </h4>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                <a href="#" class="gold-button" onclick="displayJob(998)" >READ MORE</a>
+                </div>
+                </div>
+                </div>
+              </div>
+              <div class="hidden job" id="job-1">
+                <a class="returnLink" onclick="displayJob(1);displayJobs()"> ← Back to job listing</a>
+                <div class="questTitle">
+          				<h1>Posters posters</h1>
+          			</div>
+                <div class="questDetails">
+                  <!-- SIDE BAR DETAILS -->
+                  <ul>
+                    <li>
+                      <h1> MISSION </h1>
+                    </li>
+                    <li>
+                      Employer :
+                      Corporate City
+                      State of
+                      Helsinki
+                    </li>
+                    <li>
+                      Payment: ??? Credits
+                    </li>
+                    <li>
+                      Strange posters and stickers sighted all around Helsinki.
+                    </li>
+                    <li>
+                      sleuth
+                    </li>
+                  </ul>
+                </div>
+                <div class="questDescription">
+                  <p>
+                    /*It has come to our attention that the hacktivist group known as "U9R1SE" may be trying to manipulate public opinion through posters and stickers found all around Helsinki, in addition to strange videos and posts found on the Helsinki Intranet. The works of the hacktivists often hide illegal credit codes in an encrypted form.
+                    <br/><br/>
+                    If you discover any of these illegal codes (in the format CR3xx-one-word-another), please report them to the credit system built by Dvergar as soon as it comes online. Effective workers will be rewarded graciously by the CCSH Department of Economy and Fiscal Policy.*/
+                  </p>
+                </div>
+              </div>
+
+              <div class="hidden job" id="job-999">
+                <a class="returnLink" onclick="displayJob(999);displayJobs()"> ← Back to job listing</a>
+                <div class="questTitle">
+          			<h1>CCSH Emergency Notice #1</h1>
+          	    </div>
+                <div class="questDescription">
+                  <p>
+                  The Corporate City State of Helsinki apologizes for the interruption in citizen's schedules due to the ongoing emergency.
+                  <br/>
+                  Despite the lack of basic necessities in many areas of the city, we remind citizens to remain calm, as plans for increasing the gruel supply are already underway. Do not panic.
+                 <br/><br/>
+                 Human Intelligence Tasks are currently unavailable, but will be released later as schedule permits.
+                 <br/>
+                 Further information on the barrier enveloping the city and other such minor inconveniences will be made available later by our trusted partners at Dvergar, along with some job offers of course.
+                 </p>
+                </div>
+              </div>
+              <div class="hidden job" id="job-998">
+                <a class="returnLink" onclick="displayJob(998);displayJobs()"> ← Back to job listing</a>
+                <div class="questTitle">
+          			<h1>CCSH Emergency Notice #2</h1>
+          	    </div>
+                <div class="questDescription">
+                  <p>
+                    The CCSH Job board has been restored to working condition. The help of every resident-employee is required. Due to database corruption, jobs prior to the current crisis have been lost. In addition, login will not be possible at this time.
+                    <br/>
+                    Our partners at Dvergar are currently instituting a new system for handling citizen credit codes. We will hyperlink to the new system as soon as final pentesting has been concluded.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <script type="text/javascript" src="g.js"></script>
+      <script type="text/javascript" src="scripts/jobs.js"></script>
+      <script type="text/javascript" src="scripts/g.js"></script>
     </body>
+    <footer class="footer hidden">
+      <span> foo </span>
+      <p> bar </p>
+    </footer>
   </html>
