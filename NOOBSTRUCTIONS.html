@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+<title>Noob instructions for using the EG submission platform</title>
+    <link rel="stylesheet" type="text/css" href="styles/md-styles.css" />
+</head>
+<body style="background-color: black; filter: invert(100%);">
+<h1>Noob instructions for using the EG submission platform</h1>
+<p>The server uses TCP sockets for connectivity. In 2043, websites would be too heavy traffic for the scattered networks so most services are text-only interfaces. You'll need to use the command line interface to access this server.</p>
+<p style="display: none;">PWNED by U9R1SE -- it's dangerous to go alone, take this: CR316-negative-crown-disturbance</p>
+<p>Table of contents:</p>
+<ol>
+<li>Opening the terminal</li>
+<li>Basic terminal usage</li>
+<li>Connecting to the submission platform</li>
+</ol>
+<h2>1. Opening the terminal</h2>
+<p>The terminal will be opened slightly differently based on your operating system</p>
+<h3>Windows</h3>
+<p>Windows isn't used in 2043, for a reason. Fortunately, there's a thing called &quot;Windows subsystem for Linux&quot;, which will let you run a Linux terminal within Windows. You can install it by following the instructions <a href="https://linuxconfig.org/how-to-install-ubuntu-18-04-on-windows-10">here</a>. Use the installed Ubuntu subsystem to run the commands in the following steps.</p>
+<h3>Mac</h3>
+<p>Pretty close to Linux, I guess. Maybe try searching (don't ask how) for a program called terminal and running it?</p>
+<h3>Linux</h3>
+<p>Congrats for using the objectively best operating system. See below for instructions.</p>
+<p><sup>(If you're new to Linux, you can try <code>ctrl + alt + t</code>)</sup></p>
+<h2>2. Basic terminal usage</h2>
+<p>The terminal is used to run programs. Actually, when you run any command on your computer, it just runs a textual command on the terminal on the background, although it is not shown to you. This means that all programs can actually be run by their respective commands from the terminal. You can try some familiar ones like <code>firefox</code> (although on the Windows subsystem this will not work). Press enter to execute the command.</p>
+<p>Often, a command will be run multiple times, or with small changes, so for convenience it's possible to re-run the previous commands by selecting them with the arrow keys. You can also modify the commands, so for example if you misspell a command, it can be fixed by pressing the up arrow and fixing the typo, instead of re-typing the whole command.</p>
+<p>Pasting with the typical <code>ctrl + c</code> will not work, but pasting text is still possible, typically by right-clicking or a shortcut such as <code>shift + ins</code>.</p>
+<p>The terminal is also smart in that it can auto-complete a command you've started typing, if you hit the shift key.</p>
+<p>We won't need much more in this case, but if you want to learn to do other basic stuff, there's plenty of <a href="https://www.linode.com/docs/tools-reference/tools/using-the-terminal/">tutorials</a> for that.</p>
+<h2>3. Connection to the submission platform</h2>
+<p>Just run the command <code>nc submit.robotuprising.fi 12345</code> and follow instructions. Choices can be made by typing in the command in question, followed by hitting enter. Be careful when pasting info as the copied text can contain a newline character, which works as if you were pressing enter. If the program freezes for some reason, you can kill it at any time by hitting <code>ctrl + c</code>. (Note: this is often not very wise as it will lose any unsaved work in the program etc, but nc is robust enough not to cause any problems.)</p>
+<p>If you have any questions, comments or clarifications, you can express them at our <a href="http://reddit.com/r/villainhelsinki">subreddit</a>.</p>
+</body>
+</html>
